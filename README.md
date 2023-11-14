@@ -1,6 +1,6 @@
 Back-end do Desafio
 
-Front-end pode ser encontrado (aqui)[https://github.com/edgardlopes/frontend-challenge]
+Front-end pode ser encontrado [aqui](https://github.com/edgardlopes/frontend-challenge)
 
 
 Consiste de uma api que gerencia arquivos, gerando URLs pré-assinadas para ser feito upload no S3.
