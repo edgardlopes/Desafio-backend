@@ -32,7 +32,7 @@ export class FileController {
     });
 
     const command = new PutObjectCommand({
-      Bucket: 'infrastack-infrabucket5cec4531-1mnt48kysipc7',
+      Bucket: process.env.BUCKET_NAME,
       Key: `${createdId}-${file.fileName}`,
     });
     const url = await getSignedUrl(this.client, command, { expiresIn: 3600 });

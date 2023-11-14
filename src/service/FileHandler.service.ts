@@ -30,7 +30,7 @@ export class FileConsumer {
     const out = await client.send(
       new GetObjectCommand({
         Key: `${job.data.id}-${job.data.fileName}`,
-        Bucket: 'infrastack-infrabucket5cec4531-1mnt48kysipc7',
+        Bucket: process.env.BUCKET_NAME,
       }),
     );
 
